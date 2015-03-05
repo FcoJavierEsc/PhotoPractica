@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+
+    <!-- Semantic definitions -->
+
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+
+    <dimen name="categoriaH_list">22dp</dimen>
+    <!-- debe ser categoriaW_list =  categoriaH_list + catPad -->
+    <dimen name="categoriaW_list">28dp</dimen>
+    <dimen name="catPad">6dp</dimen>
+    <dimen name="subcategoria_list">18dp</dimen>
+</resources>

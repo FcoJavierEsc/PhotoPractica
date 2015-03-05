@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/primary_light">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/primary_light">
+
+            <LinearLayout
+                android:id="@+id/container_inner_item"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:padding="8dp"
+                tools:showIn="@layout/photo_list">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/card_photoW"
+                        android:layout_height="@dimen/card_photoH"
+                        android:contentDescription="@string/card_description"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/card_design"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10sp">
+
+                        <EditText
+                            android:id="@+id/card_titulo_ET"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:ellipsize="end"
+                            android:textSize="18sp"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="@string/card_fecha"
+                                android:textSize="8sp"/>
+
+                            <ImageView
+                                android:id="@+id/card_imgexp1"
+                                android:layout_width="@dimen/card_categoriaW"
+                                android:layout_height="@dimen/card_categoriaH"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="right"
+                                android:layout_toStartOf="@+id/show_imgexp2"
+                                android:background="@drawable/card_ripple_trans"
+                                android:contentDescription="@string/card_imgcategoria"
+                                android:paddingRight="@dimen/card_catPad"
+                                android:scaleType="fitCenter"/>
+
+                            <ImageView
+                                android:id="@+id/show_imgexp2"
+                                android:layout_width="@dimen/card_subcategoriaW"
+                                android:layout_height="@dimen/card_subcategoriaH"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="end|bottom"
+                                android:background="@drawable/card_ripple_trans"
+                                android:contentDescription="@string/card_imgsubcategoria"
+                                android:scaleType="fitCenter"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_vertical"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridcategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+
+                android:layout_weight="0.5"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="5dp">
+
+            </GridView>
+
+            <GridView
+                android:id="@+id/gridsubcategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+
+                android:layout_weight="0.5"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="5dp">
+
+            </GridView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/action_accept"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple"
+        android:contentDescription="@string/description"
+        android:elevation="10dp"
+        android:src="@drawable/ok"
+        android:stateListAnimator="@anim/anim"/>
+
+    <ImageButton
+        android:id="@+id/action_cancel"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ripple_red"
+        android:contentDescription="@string/description"
+        android:elevation="10dp"
+        android:src="@drawable/cancel"
+        android:stateListAnimator="@anim/anim"/>
+</RelativeLayout>

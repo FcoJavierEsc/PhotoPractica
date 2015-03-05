@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigationdraweractivity_title">Navigation Drawer Example</string>
+    <string name="navigationdraweractivity_description">This example illustrates a common usage of the DrawerLayout widget in the Android
+            support library.</string>
+    <string name="card_description">Image to show</string>
+    <string name="card_title">Title of the card</string>
+    <string name="card_fecha">Date card</string>
+    <string name="card_imgcategoria">Card image categoria</string>
+    <string name="card_imgsubcategoria">Card image subtitle</string>
+
+
+
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+
+
+    <dimen name="card_photoW">70dp</dimen>
+    <dimen name="card_photoH">70dp</dimen>
+    <dimen name="card_categoriaW">28dp</dimen>
+    <dimen name="card_categoriaH">22dp</dimen>
+    <dimen name="card_catPad">6dp</dimen>
+    <dimen name="card_subcategoriaH">18dp</dimen>
+    <dimen name="card_subcategoriaW">18dp</dimen>
+
+
+    <color name="teal">#009688</color>
+    <color name="black_87">#DD000000</color>
+    <color name="black_54">#89000000</color>
+
+</resources>

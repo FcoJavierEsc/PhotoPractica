@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/primary_light">
+
+        <LinearLayout
+            android:id="@+id/container_inner_item"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:showIn="@layout/photo_list">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/show_imgprincipal"
+                    android:layout_width="@dimen/card_photoW"
+                    android:layout_height="@dimen/card_photoH"
+                    android:contentDescription="@string/card_description"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/card_design"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:paddingLeft="10sp">
+
+                    <TextView
+                        android:id="@+id/show_titulo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="end"
+                        android:hint="..."
+                        android:text="@string/card_title"
+                        android:textSize="18sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/show_subanotacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="@string/card_fecha"
+                            android:textSize="8sp"/>
+
+                        <ImageView
+                            android:id="@+id/show_imgexp1"
+                            android:layout_width="@dimen/card_categoriaW"
+                            android:layout_height="@dimen/card_categoriaH"
+                            android:layout_gravity="right"
+                            android:background="@drawable/card_ripple_trans"
+                            android:contentDescription="@string/card_imgcategoria"
+                            android:paddingRight="@dimen/card_catPad"
+                            android:scaleType="fitCenter"
+                            android:layout_alignParentTop="true"
+                            android:layout_toStartOf="@+id/show_imgexp2"/>
+
+                        <ImageView
+                            android:id="@+id/show_imgexp2"
+                            android:layout_width="@dimen/card_subcategoriaW"
+                            android:layout_height="@dimen/card_subcategoriaH"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="end|bottom"
+                            android:background="@drawable/card_ripple_trans"
+                            android:contentDescription="@string/card_imgsubcategoria"
+                            android:scaleType="fitCenter"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/show_anotacion"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="Info"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

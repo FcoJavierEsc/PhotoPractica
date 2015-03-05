@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_changetype"
+        android:orderInCategory="100"
+        android:title="Tipo"/>
+
+    <item
+        android:id="@+id/menu_showcurrentlocation"
+        android:orderInCategory="100"
+        android:title="Estoy"/>
+
+    <item
+        android:id="@+id/menu_showphotolocation"
+        android:orderInCategory="100"
+        android:title="Ir foto"/>
+
+    <item
+        android:id="@+id/menu_lineconnecttwopoints"
+        android:orderInCategory="100"
+        android:title="Traza"/>
+
+</menu>

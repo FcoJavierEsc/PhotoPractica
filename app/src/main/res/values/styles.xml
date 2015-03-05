@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+     (but not Toolbar) background.
+      We specify the same color for the toolbar background in
+      toolbar.xml.. -->
+        <item name="colorPrimary">@color/primary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:actionModeBackground">@drawable/actionbar_background</item>
+        <item name="actionModeBackground">@drawable/actionbar_background</item>
+    </style>
+
+</resources>
+    <!--
+    <style name="Widget" />
+
+    <style name="Widget.ContentContainer">
+        <item name="android:paddingTop">@dimen/vertical_page_margin</item>
+        <item name="android:paddingBottom">@dimen/vertical_page_margin</item>
+        <item name="android:paddingLeft">@dimen/horizontal_page_margin</item>
+        <item name="android:paddingRight">@dimen/horizontal_page_margin</item>
+    </style>
+
+    <style name="Widget.Message">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@color/black_54</item>
+    </style>
+
+
+
+    <style name="Widget.Dashboard.Card" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+
+    </style>
+
+    <style name="Widget.Dashboard.Item" parent="Widget">
+    </style>
+
+    <style name="Widget.Dashboard.Item.Title" parent="Widget">
+        <item name="android:layout_marginBottom">@dimen/margin_tiny</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@color/teal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Widget.Dashboard.Item.Description" parent="Widget">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/black_87</item>
+    </style>
+
+-->
